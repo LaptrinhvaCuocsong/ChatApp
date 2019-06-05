@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="LKL-55-cJP" customClass="CustomMessageCell" customModule="Flash_Chat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="81"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LKL-55-cJP" id="eae-fc-Di7">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="80.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RqO-hB-fwg">
+                        <rect key="frame" x="376" y="45.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="2qA-fD-he1"/>
+                            <constraint firstAttribute="height" constant="30" id="GjK-IV-JHF"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fo9-Is-Cjy" userLabel="Message Background">
+                        <rect key="frame" x="50" y="10" width="306" height="60.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usernamel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JyB-Ij-lda">
+                                <rect key="frame" x="8" y="8" width="289" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sB-oQ-nlE">
+                                <rect key="frame" x="8" y="32" width="289" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JyB-Ij-lda" firstAttribute="leading" secondItem="fo9-Is-Cjy" secondAttribute="leading" constant="8" id="1AE-A6-IYa"/>
+                            <constraint firstAttribute="bottom" secondItem="8sB-oQ-nlE" secondAttribute="bottom" constant="8" id="1Mk-0i-yj6"/>
+                            <constraint firstItem="8sB-oQ-nlE" firstAttribute="top" secondItem="JyB-Ij-lda" secondAttribute="bottom" constant="8" id="Sco-QS-6Ta"/>
+                            <constraint firstAttribute="trailing" secondItem="8sB-oQ-nlE" secondAttribute="trailing" constant="9" id="VJ2-gn-2OL"/>
+                            <constraint firstItem="JyB-Ij-lda" firstAttribute="top" secondItem="fo9-Is-Cjy" secondAttribute="top" constant="8" id="cAd-5V-qBE"/>
+                            <constraint firstAttribute="bottom" secondItem="8sB-oQ-nlE" secondAttribute="bottom" constant="8" id="iAF-m3-rBF"/>
+                            <constraint firstItem="8sB-oQ-nlE" firstAttribute="leading" secondItem="fo9-Is-Cjy" secondAttribute="leading" constant="8" id="or9-7e-A2v"/>
+                            <constraint firstAttribute="trailing" secondItem="JyB-Ij-lda" secondAttribute="trailing" constant="9" id="rP9-3q-07o"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fo9-Is-Cjy" firstAttribute="leading" secondItem="eae-fc-Di7" secondAttribute="leading" constant="50" id="Jfh-B2-pkn"/>
+                    <constraint firstAttribute="trailing" secondItem="RqO-hB-fwg" secondAttribute="trailing" constant="8" id="b3m-Ae-iO6"/>
+                    <constraint firstItem="fo9-Is-Cjy" firstAttribute="top" secondItem="eae-fc-Di7" secondAttribute="top" constant="10" id="kWV-wR-S2l"/>
+                    <constraint firstAttribute="trailing" secondItem="fo9-Is-Cjy" secondAttribute="trailing" constant="58" id="t2J-HA-vWw"/>
+                    <constraint firstItem="RqO-hB-fwg" firstAttribute="bottom" secondItem="fo9-Is-Cjy" secondAttribute="bottom" constant="5" id="uwr-H1-Ky1"/>
+                    <constraint firstAttribute="bottom" secondItem="fo9-Is-Cjy" secondAttribute="bottom" constant="10" id="wZb-2n-fJV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="messageBackground" destination="fo9-Is-Cjy" id="yGN-xk-Y7x"/>
+                <outlet property="messageBody" destination="8sB-oQ-nlE" id="2rg-kN-swh"/>
+                <outlet property="senderUsername" destination="JyB-Ij-lda" id="m9S-AN-r5j"/>
+                <outlet property="statusImageView" destination="RqO-hB-fwg" id="vTc-pb-cyN"/>
+            </connections>
+            <point key="canvasLocation" x="1721.7391304347827" y="1962.3883928571427"/>
+        </tableViewCell>
+    </objects>
+</document>
